@@ -10,7 +10,7 @@
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
     integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
   <title>Build a Bootstrap site</title>
 
@@ -20,7 +20,7 @@
       text-align: center;
     }
 
-    #appSummary{
+    #appSummary {
       text-align: center;
     }
   </style>
@@ -28,7 +28,7 @@
 
 <body>
   <nav class="navbar navbar-expand-lg navbar-light bg-light">
-    <a class="navbar-brand" href="#">MyApp</a>
+    <a class="navbar-brand" href="#">Pet Pond</a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
       aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
@@ -36,14 +36,27 @@
 
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav mr-auto">
+        <!-- Will need to make this in vue as looping menu -->
         <li class="nav-item active">
           <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">About</a>
+          <a class="nav-link" href="#">Why Choose</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">Download</a>
+          <a class="nav-link" href="#">Services</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Food Menu - with dropdown</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Blog</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Reservations</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Contact</a>
         </li>
 
       </ul>
@@ -53,6 +66,8 @@
         <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Submit</button>
       </form>
     </div>
+
+    <p> Will need a set of icons URL</p>
   </nav>
 
   <div class="jumbotron">
@@ -93,7 +108,8 @@
           <img src="owl.jpg" class="card-img-top" alt="owl bird">
           <div class="card-body">
             <h5 class="card-title">Card title</h5>
-            <i class="fab fa-accessible-icon"></i><p class="card-text"><i class="fab fa-accessible-icon"></i>This is a longer card with supporting text below as a natural lead-in to additional
+            <i class="fab fa-accessible-icon"></i>
+            <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional
               content. This content is a little bit longer.</p>
             <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
           </div>
@@ -118,6 +134,25 @@
       </div>
     </div>
 
+  </div>
+
+  <div class="container">
+    <div class="row">
+      <button class="btn-menu" id="btn-menu" data-icon-name="hamburgerCross" type="button">
+        <svg height="64" version="1.1" width="64" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+          <desc>Created with Snap</desc>
+          <defs></defs>
+          <g>
+            <path class="path" fill="#888" stroke="#888" stroke-width="5" stroke-linejoin="bevel"
+              d="M5.0916789,20.818994C5.0916789,20.818994,58.908321,20.818994,58.908321,20.818994"></path>
+            <path class="path" fill="#888" stroke="#888" stroke-width="5" stroke-linejoin="bevel"
+              d="m 5.1969746,31.909063 53.8166424,0" style="opacity: 1;" transform="matrix(1,0,0,1,0,0)"></path>
+            <path class="path" fill="#888" stroke="#888" stroke-width="5" stroke-linejoin="bevel"
+              d="M5.0916788,42.95698C5.0916788,42.95698,58.908321,42.95698,58.908321,42.95698"></path>
+          </g>
+        </svg>
+      </button>
+    </div>
   </div>
 
 
